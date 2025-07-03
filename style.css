@@ -1,0 +1,32 @@
+.title{
+    display:flex;
+    justify-content:center;
+    font-size:40px;
+}
+
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.board{
+    display:flex;
+    box-sizing: border-box;
+    border: solid black 1px;
+    height:700px;
+    width:900px;
+    flex-wrap:wrap;
+   
+
+    
+
+}
+
+.board div{
+    display:flex;
+    border:dotted black 1px;
+    flex-wrap:nowrap;
+    width:90.7px;
+    height:20px;;
+}
