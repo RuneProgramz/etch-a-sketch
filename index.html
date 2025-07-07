@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="title"><strong>Etch-A-Sketch</strong></div>
+    <button class="GridButton">To Change The Number Of Squares</button>
     <div class="container">
         
         <div class="board"></div>
@@ -21,11 +22,37 @@
 
 
     const insideContainer = document.querySelector(".board");
-    for(let i = 1; i<=gridLength<i++){
+    for(let i = 1; i<=gridLength; i++){
          const makingDiv = document.createElement("div");
+         makingDiv.classList.add("BlockDivClass");
+         insideContainer.appendChild(makingDiv);
+
     }
-   
-}
+  
+    const allDivs = document.getElementsByClassName("BlockDivClass");
+    console.log(allDivs);
+
+    for(let i=0;i<allDivs.length; i++){
+        allDivs[i].addEventListener("mouseenter",function(event){
+        event.target.style.backgroundColor ="purple";
+         });
+    }
+
+    const SquareChangerClass = document.getElementsByClassName("board");
+    SquareChangerClass.addEventListener("click",function()
+        prompt("Enter The Amount of Squares You Want");
+
+        })
+
+    // addEventListener("mouseenter",function(event){
+    //     event.target.style.color ="purple";
+    // });
+    // addEventListener("mouseleave",function(event){
+    //     event.target.style.color ="";
+
+    // });
+
+    
     </script>
     
 </body>
