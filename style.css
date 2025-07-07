@@ -14,9 +14,9 @@
     display:flex;
     box-sizing: border-box;
     border: solid black 1px;
-    height:700px;
-    width:900px;
     flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
    
 
     
@@ -26,7 +26,12 @@
 .board div{
     display:flex;
     border:dotted black 1px;
-    flex-wrap:nowrap;
-    width:90.7px;
-    height:20px;;
+    flex-wrap:wrap;
+    width: 55.8px;
+    height: 40.9px;
+    box-sizing: border-box;
 }
+
+/* .BlockDivClass{
+   
+} */
