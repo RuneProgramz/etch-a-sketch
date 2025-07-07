@@ -9,6 +9,8 @@
     display:flex;
     justify-content: center;
     align-items:center;
+    transform: scale(calc(960px / 1000)); /* scale to fit vertically */
+    transform-origin: top center;
 }
 .board{
     display:flex;
@@ -40,4 +42,12 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: scale(0.75); */
+    transform-origin: top left;
+    width: 133.33%;
+    height: 133.33%;
+    overflow: hidden;
+    margin: 0;
+
+
 }
